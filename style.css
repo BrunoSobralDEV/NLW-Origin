@@ -70,14 +70,16 @@ a {
   
   justify-content: center;
   align-items: center;
-  
+
   /* margin-top: 0.25rem; */
 }
 
 p{
   margin-top: 2rem;
 }
-
+.rocketseat{
+  color: #6845ca;
+}
 ul{
   margin-top: 4rem;
 
