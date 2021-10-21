@@ -28,7 +28,7 @@
           <img src="https://github.com/BrunoSobralDEV.png" alt="Foto pessoal" />
         </div>
 
-        <h1>Bruno Sobral</h1>
+        <h1 id="userName">Bruno Sobral</h1>
 
         <a href="https://github.com/BrunoSobralDEV">
           <img src="images/github.svg" alt="logo github" />
@@ -47,9 +47,9 @@
             /></a>
           </li>
           <li>
-            <a href="https://instagram.com" target="_blank"
-              ><img src="images/instagram.svg" alt="Ícone Instagram"
-            /></a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram.svg" alt="Ícone Instagram"/>
+            </a>
           </li>
           <li>
             <a href="https://facebook.com" target="_blank"
@@ -64,5 +64,22 @@
         </ul>
       </div>
     </main>
+
+    <script>
+
+      const links = {
+        github: 'BrunoSobralDEV',
+        youtube: 'brunosobraldev',
+        facebook: 'brunosobralss',
+        instagram: 'brunosobralss',
+        twitter: 'brunosobralss'
+      }
+      
+      function changeSocialMediaLinks() {
+        userName.textContent = 'Olívia';
+      }
+      
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
