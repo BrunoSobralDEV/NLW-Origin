@@ -36,27 +36,28 @@
         </a>
 
         <p>
-          Bacharel Ciências-Contábeis. Dev-Estudante <span class="rocketseat">@Rocketseat</span>: ReactJS
-          - React Native - NodeJS
+          Bacharel Ciências-Contábeis. Dev-Estudante
+          <span class="rocketseat">@Rocketseat</span>: ReactJS - React Native -
+          NodeJS
         </p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="youtube">
             <a href="https://youtube.com" target="_blank"
               ><img src="images/youtube.svg" alt="Ícone Youtube"
             /></a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://instagram.com" target="_blank">
-              <img src="images/instagram.svg" alt="Ícone Instagram"/>
+              <img src="images/instagram.svg" alt="Ícone Instagram" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="https://facebook.com" target="_blank"
               ><img src="images/facebook.svg" alt="Ícone Facebook"
             /></a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com" target="_blank"
               ><img src="images/twitter.svg" alt="Ícone Twitter" />
             </a>
@@ -66,20 +67,24 @@
     </main>
 
     <script>
+      const linksSocialMedia = {
+        github: "BrunoSobralDEV",
+        youtube: "brunosobraldev",
+        facebook: "brunosobralss",
+        instagram: "brunosobralss",
+        twitter: "brunosobralss"
+      }
 
-      const links = {
-        github: 'BrunoSobralDEV',
-        youtube: 'brunosobraldev',
-        facebook: 'brunosobralss',
-        instagram: 'brunosobralss',
-        twitter: 'brunosobralss'
-      }
-      
       function changeSocialMediaLinks() {
-        userName.textContent = 'Olívia';
+        
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute("class");
+          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+
+        }
       }
-      
-      changeSocialMediaLinks()
+
+      changeSocialMediaLinks();
     </script>
   </body>
 </html>
