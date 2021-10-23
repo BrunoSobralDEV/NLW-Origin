@@ -25,20 +25,18 @@
       <div class="container">
         <div class="avatar">
           <span><img src="images/build.svg" alt="Selo Rocketseat" /></span>
-          <img src="https://github.com/BrunoSobralDEV.png" alt="Foto pessoal" />
+          <img id="userImg" src="#" alt="Foto pessoal" />
         </div>
 
-        <h1 id="userName">Bruno Sobral</h1>
+        <h1 id="userName">nome_do_usuário</h1>
 
-        <a href="https://github.com/BrunoSobralDEV">
+        <a id="userLink" href="#">
           <img src="images/github.svg" alt="logo github" />
-          brunosobral
+          <span id="userGitHub">profile_gitHub</span>
         </a>
 
-        <p>
-          Bacharel Ciências-Contábeis. Dev-Estudante
-          <span class="rocketseat">@Rocketseat</span>: ReactJS - React Native -
-          NodeJS
+        <p id="userBio">
+          user_bio
         </p>
 
         <ul id="socialLinks">
@@ -66,25 +64,6 @@
       </div>
     </main>
 
-    <script>
-      const linksSocialMedia = {
-        github: "BrunoSobralDEV",
-        youtube: "brunosobraldev",
-        facebook: "brunosobralss",
-        instagram: "brunosobralss",
-        twitter: "brunosobralss"
-      }
-
-      function changeSocialMediaLinks() {
-        
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute("class");
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
-        }
-      }
-
-      changeSocialMediaLinks();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
