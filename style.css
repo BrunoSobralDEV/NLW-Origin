@@ -9,7 +9,7 @@ body {
   --black: hsla(240, 6%, 13%);
 
   height: 100%;
-  font-family: "Robot", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -91,4 +91,36 @@ ul{
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 720px){
+  /*versão tablet*/
+}
+
+@media (min-width: 960px){
+  /*versão Desktop*/
+  body{
+    
+  }
+  main{
+    background: url(./images/background.svg) no-repeat center/cover;
+    width: 22.375rem;
+    min-height: 540px;
+    height: 33.75rem;
+  }
+
+  .faixa{
+    position: absolute;
+    top: -78px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .avatar{
+    margin: 4.5rem auto 0;
+  }
+
+  ul{
+    margin-top: 2.5rem;
+  }
 }
