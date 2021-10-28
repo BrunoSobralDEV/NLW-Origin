@@ -15,7 +15,7 @@ body {
 
 body {
   display: grid;
-  place-items: center;
+  place-items: start center;
 }
 
 main {
@@ -23,6 +23,8 @@ main {
   width: 100vw;
   min-height: 812px;
   height: 100vh;
+
+  transition: 1s;
 }
 
 .container {
@@ -92,32 +94,60 @@ ul{
 
   justify-content: center;
 }
-
+  .faixa{
+    display: none;
+  }
+  
 @media (min-width: 720px){
-  /*versão tablet*/
-}
-
-@media (min-width: 960px){
-  /*versão Desktop*/
-  body{
-    
+  /*versão tablet/desktop*/
+  body {
+    background: url(./images/background-desktop.svg);
+    background-size: cover;
+    /*
+    background: linear-gradient(
+      to bottom,
+      #00C2FF,
+      #DBFF00,
+      #000000
+    );
+    */
   }
   main{
     background: url(./images/background.svg) no-repeat center/cover;
     width: 22.375rem;
     min-height: 540px;
     height: 33.75rem;
+    margin-top: 100px;
+    
+    border-top: 1px solid transparent;
+    
+  }
+  main:hover{
+    
+    border: 1px solid #00C2FF;
+  }
+  a{
+    transition: filter 0.2s;
+  }
+  a:hover{
+    filter: brightness(0.8);
   }
 
   .faixa{
-    position: absolute;
-    top: -78px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    position: absolute;  
+    z-index: 1;
+    top: -40px;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+  }
+  .faixa span{
+    position: absolute; 
+    z-index: -1;
+    top: 148px;
   }
   .avatar{
-    margin: 4.5rem auto 0;
+    margin: 3.375rem auto 0;
   }
 
   ul{
